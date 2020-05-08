@@ -4,12 +4,12 @@
 The goal of this project is to define a data model that will help our data scientists answer questions about user activity. In this case, we are working with a NoSQL database, Apache Cassandra, which means we have to be especially intentional in our data modeling. We first need to understand what queries our data scientists would like to run, and then we can design tables to fit those queries. We will be aiming for "1 query, 1 table".
 
 ### File Overview
-event_data/ - contains our data for user sessions in the streaming app in csv format. files are partitioned by day.
-images - contains an image of what our data looks like after an ETL process
-data_modeling.ipynb - Has two parts:
-ETL pipeline for processing the event files and compiling them into a single csv with the desired columns
-Data modeling examples that show three queries and the creation of three tables to serve those queries
-Note: the data is not included in this repo, but can be shared upon request.
+- event_data/ - contains our data for user sessions in the streaming app in csv format. files are partitioned by day.
+- images - contains an image of what our data looks like after an ETL process
+ - data_modeling.ipynb - Has two parts:
+   ETL pipeline for processing the event files and compiling them into a single csv with the desired columns
+   Data modeling examples that show three queries and the creation of three tables to serve those queries
+   Note: the data is not included in this repo.
 
 To run this, you simply need to open the Notebook and run all cells.
 
