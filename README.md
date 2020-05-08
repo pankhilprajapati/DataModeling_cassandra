@@ -19,21 +19,21 @@ To run this, you simply need to open the Notebook and run all cells.
 
 ### Work done
 
-1. Give me the artist, song title and song's length in the music app history that was heard during  sessionId = 338, and itemInSession  = 4
+#### 1. Give me the artist, song title and song's length in the music app history that was heard during  sessionId = 338, and itemInSession  = 4
 
 - first creating the table "songs" which contains the column names "artist_name", "song_title", "song_len", "session_id"and  "item_in_session"
   and assign the primary key as sesson_id and clustering column as item_in_session (unique)
 - Inserting the data using the csv 
 - selecting the desired output using where clause
 
-2. Give me only the following: name of artist, song (sorted by itemInSession) and user (first and last name) for userid = 10, sessionid = 182
+#### 2. Give me only the following: name of artist, song (sorted by itemInSession) and user (first and last name) for userid = 10, sessionid = 182
 
 - first creating the table "artists" which contains the column names "artist_name", "song_title", "first_name", "last_name", "user_id", "session_id"and  "item_in_session"
   and assign the primary key as user_id and clustering column session_id ( for uniqueness) , item_in_session (sort by)
 - Inserting the data using the csv 
 - selecting the desired output using where clause
 
-3. Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
+#### 3. Give me every user name (first and last) in my music app history who listened to the song 'All Hands Against His Own'
 
 - first creating the table "artists" which contains the column names "artist_name", "song_title", "first_name", "last_name", "user_id", "session_id"and  "item_in_session"
   and assign the primary key as song_title (for searching) and clustering column user-id ( for uniqueness)
